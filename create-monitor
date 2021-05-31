@@ -1,0 +1,5 @@
+pg_autoctl create monitor --hostname 192.168.12.130  --run --pgdata /var/lib/pgsql/12/data --pgport 5432 --no-ssl --auth scram-sha-256
+
+alter user autoctl_node password 'h4ckm3';
+
+

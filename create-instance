@@ -1,0 +1,5 @@
+pg_autoctl create postgres     --hostname 192.168.12.151     --auth scram-sha-256    --monitor postgres://autoctl_node:h4ckm3@192.168.12.130:5432/pg_auto_failover?sslmode=prefer --pgdata /var/lib/pgsql/12/data --pgctl /bin/pg_ctl --no-ssl
+
+pg_autoctl config set replication.password h4ckm3m0r3
+
+alter role pgautofailover_replicator with password 'h4ckm3m0r3'
