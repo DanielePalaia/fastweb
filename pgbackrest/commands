@@ -1,0 +1,4 @@
+pgbackrest --stanza=fastweb --log-level-console=info stanza-create
+pgbackrest --stanza=fastweb --log-level-console=info check
+pgbackrest --stanza=fastweb --log-level-console=info backup
+pgbackrest --stanza=demo --type=diff --log-level-console=info backup
